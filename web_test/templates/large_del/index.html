@@ -1,0 +1,48 @@
+{% block header %}
+
+<script src="/static/jquery-1.11.0.min.js"></script>
+<script src="/static/jquery-migrate-1.2.1.min.js"></script>
+<script src="/static/js_download.js"></script>
+<script src="/static/interface.js"></script>
+
+{% endblock %}
+
+{% block contents %}
+
+<div class="container-fluid extra-padding">
+    <br />
+    <label for="file1">File 1</label>
+    <input type="file" id="file1" name="file1"/>
+    <br />
+    <br />
+    <label for="file2">File 2</label>
+    <input type="file" id="file2" name="file2"/>
+    <br />
+    <br />
+    <label for="file3">File 3</label>
+    <input type="file" id="file3" name="file3"/>
+    <br />
+    <br />
+    <label for="file4">File 4</label>
+    <input type="file" id="file4" name="file4"/>
+    <br />
+    <br />
+    <label for="seq">String</label>
+    <textarea id="seq" name="seq"></textarea>
+    <br />
+    <br />
+    <label for="cnt">int</label>
+    <textarea id="cnt" name="cnt"></textarea>
+    <br />
+    <br />
+    <input type="button" value="button" onclick="main()">
+    <br />
+    <br />
+        <label for="output">Output</label>
+        <br />
+        <table border=1>
+            <span class="input-output"></span>
+        </table>
+</div>
+
+{% endblock %}

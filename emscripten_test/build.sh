@@ -1,0 +1,1 @@
+em++ -O3 -s USE_ZLIB=1 --std=c++11 emscripten_interface.cpp webtest.cpp be_fastq-lib.cpp -o webtest-core.js -s EXPORTED_FUNCTIONS="['_run_webtest']" -s EXTRA_EXPORTED_RUNTIME_METHODS="['ccall','cwrap']" -s WASM=0 -s TOTAL_MEMORY=16MB --memory-init-file 0
