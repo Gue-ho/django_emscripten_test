@@ -1,0 +1,1 @@
+# django_emscripten_test
